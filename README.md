@@ -20,8 +20,8 @@ This project aims to classify text as **positive** or **negative** based on sent
 
 ## Project Structure
 
-\`\`\`
-.
+```
+
 ├── main.py # Flask application entry point
 ├── models/
 │ ├── best_sentiement_model.h5 # Trained Keras model
@@ -35,7 +35,7 @@ This project aims to classify text as **positive** or **negative** based on sent
 | └── Sentiment_analysis_DL.ipynb # Jupyter notebook of trained model
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
-\`\`\`
+```
 
 ## Installation
 
@@ -47,25 +47,25 @@ This project aims to classify text as **positive** or **negative** based on sent
 ### Setup
 
 1. Clone the repository:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/VaibhavVermaa16/Sentiment-analysis-using-DL
    cd Sentiment-analysis-using-DL
-   \`\`\`
+   ```
 
 2. Install the required dependencies:
-   \`\`\`bash
+   ```bash
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
 3. Run the Flask application:
-   \`\`\`bash
+   ```bash
    python main.py
-   \`\`\`
+   ```
 
 4. Open a browser and navigate to:
-   \`\`\`
+   ```
    http://127.0.0.1:5000
-   \`\`\`
+   ```
 
 ## Usage
 
@@ -74,9 +74,9 @@ The web interface accepts user input (text) and returns a sentiment classificati
 ### Programmatic Access:
 
 You can also use the API directly:
-\`\`\`bash
+```bash
 curl -X POST -d "text=I love this product!" http://127.0.0.1:5000/predict
-\`\`\`
+```
 
 ## Model Details
 
@@ -93,17 +93,17 @@ curl -X POST -d "text=I love this product!" http://127.0.0.1:5000/predict
 
 ## API Endpoints
 
-- \`GET /\`: Renders the web frontend.
-- \`POST /predict\`: Accepts text input and returns a JSON response with the sentiment (positive/negative).
+- `GET /`: Renders the web frontend.
+- `POST /predict`: Accepts text input and returns a JSON response with the sentiment (positive/negative).
 
 ### Example Response:
 
-\`\`\`json
+```json
 {
 "text": "I love this!",
 "sentiment": "Positive"
 }
-\`\`\`
+```
 
 ## Results
 
